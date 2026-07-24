@@ -22,7 +22,7 @@ public class Inventory{
     //updating the price and the quntity of the productid
     public void updatingproduct(String productid,int quntity,double price)
     {
-        Product product=productmap.get(productid);
+        Product product=productmap.get(productid);    
         if(product!=null)
         {
                product.setquntity(newquntity);
@@ -33,6 +33,7 @@ public class Inventory{
             System.out.println("the requested id is not present in the data base ");
         }
     }
+    
     //deleting the product
     public void deletingproductid(String productid)
     {
